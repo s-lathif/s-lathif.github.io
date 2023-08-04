@@ -82,8 +82,8 @@
                 <ul data-offcanvass="yes">
                     <li class="active"><a href="#">About</a></li>
                     <li><a href="projects.html">Projects</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Experiences</a></li>
+                    <li><a href="blog/index.html">Blog</a></li>
+                    <li><a href="exp.html">Resume</a></li>
                 </ul>
             </div>
         </div>
@@ -171,10 +171,83 @@
 			</div>
 		</div>
 
-
+<br>
+<br>
 
     <!-- Blog Section -->
     <!-- Same blog section content as in index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Your head content goes here -->
+  <style>
+    .gradient-box {
+      background: linear-gradient(to right, #000000, #606060); /* Replace these colors with your desired gradient */
+      height: 2cm;
+      width: 100%;
+      position: fixed;
+      bottom: 0; /* Place the footer at the bottom */
+      left: 0;
+      z-index: 9999; /* Adjust this value if you have other elements with higher z-index */
+    }
+
+    /* Additional styles for footer content */
+    .footer-content {
+      padding: 10px;
+      text-align: center;
+      color: #fff; /* Change the text color to contrast with your gradient */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Your main content goes here -->
+  <div id="content">
+    <!-- Your content -->
+  </div>
+
+  <div class="gradient-box" id="footer" style="display: none;">
+    <div class="footer-content">
+      Copyright &copy; lathifs.tech 2023 | <a href="mailto:lathifsharieff@gmail.com">Contact : lathifsharieff@gmail.com</a>
+    </div>
+  </div>
+
+  <script>
+    // Wait for the page to load
+    document.addEventListener("DOMContentLoaded", function() {
+      // Function to check if the user has scrolled to the bottom
+      function isScrolledToBottom() {
+        return window.innerHeight + window.scrollY >= document.body.offsetHeight;
+      }
+
+      // Delayed function to show the footer after 0.5s
+      setTimeout(function() {
+        if (isScrolledToBottom()) {
+          document.getElementById("footer").style.display = "block";
+        }
+      }, 500);
+      
+      // Show or hide the footer when scrolling
+      function toggleFooterVisibility() {
+        if (isScrolledToBottom()) {
+          document.getElementById("footer").style.display = "block";
+        } else {
+          document.getElementById("footer").style.display = "none";
+        }
+      }
+      
+      // Initial check
+      toggleFooterVisibility();
+      
+      // Check while scrolling
+      window.addEventListener("scroll", toggleFooterVisibility);
+    });
+  </script>
+
+</body>
+</html>
+
+
 
     <!-- JavaScript dependencies -->
     <script src="js/jquery.min.js"></script>
