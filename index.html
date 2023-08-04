@@ -81,7 +81,7 @@
 				</div>
 				<div class="col-lg-6 col-md-5 col-sm-5 text-center fh5co-link-wrap">
 					<ul data-offcanvass="yes">
-						<li class="active"><a href="#">About</a></li>
+						<li class="active"><a href="#about">About</a></li>
 						<li><a href="projects.html">Projects</a></li>
 						<li><a href="blog/index.html">Blog</a></li>
 						<li><a href="exp.html">Resume</a></li>
@@ -97,7 +97,7 @@
 		</nav>
 
 
-		<div class="fh5co-cover fh5co-cover-style-2 js-full-height" data-stellar-background-ratio="0.1" data-next="yes"  style="background-image: url(images/fpga.png);">
+		<div class="fh5co-cover fh5co-cover-style-2 js-full-height" data-stellar-background-ratio="0" data-next="yes"  style="background-image: url(images/fpga.png);">
 		  	<span class="scroll-btn wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.8s">
 				<a href="#">
 					<span class="mouse"><span></span></span>
@@ -110,7 +110,7 @@
 						<div class="col-md-push-6 col-md-6 full-height js-full-height">
 							<div class="fh5co-cover-intro">
 								<h1 class="cover-text-lead wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.4s">Change AI hardware paradigm with me</h1>
-								<h2 class="cover-text-sublead wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.6s">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</h2>
+								<h2 class="cover-text-sublead wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.6s">AI ASIC enthusiast seeking dynamic opportunities to excel and innovate.</h2>
 								<p class="wow fadeInUp" data-wow-duration="0.7s" data-wow-delay="1.9s"><p>
                                 <a href="assets/cv.pdf" class="btn btn-primary btn-outline btn-lg">
                                     Download CV <i class="fas fa-download"></i>
@@ -261,26 +261,39 @@
 			</div>
 		</div>
 
-		<div class="fh5co-content-style-6">
-			<div class="container">
-				<div class="row p-b text-center">
-					<div class="col-md-6 col-md-offset-3">
-						<h2 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">About</h2>
-						<p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".8s">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
-					</div>
-				</div>
-				<div class="row">
-					  <div class="d-flex justify-content-center">
-                    <div class="text-center">
-                    <img src="images/linkedin.jpg" alt="Image" class="img-fluid img-rounded-ratio-1x1" style="width:220px; height:330px;">
-                        <br>
-                        
-                       <!-- <p><a href="#" class="btn btn-primary btn-sm">Learn More</a></p>-->
-                        </div>
-                        </div>
-                `</div>
-			</div>
-		</div>
+		 <!--<div id="about" class="fh5co-content-style-6"> -->
+    <div class="container">
+        <div class="row p-b text-center">
+            <div class="col-md-6 col-md-offset-3">
+                <h2 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">About</h2>
+            <p class="wow fadeInUp text-justify" data-wow-duration="1s" data-wow-delay=".8s" style="text-align: justify;">
+                Motivated and ambitious Master’s student with hands-on experience in various projects involving ASIC and FPGA architecture. Solid understanding of AI hardware design principles. Passionate about the intersection of AI and computer architecture, exploring the synergies between cutting-edge technologies to drive innovation and maximize performance.
+            </p>
+            </div>
+        </div>
+     <div class="row">
+    <div class="d-flex justify-content-center">
+        <div class="text-center">
+            <div class="rounded-oval" style="width: 220px; height: 220px; overflow: hidden; border-radius: 50% 70% 50% 70%; margin: 0 auto;">
+    <img src="images/linkedin.jpg" alt="Image" class="img-fluid" style="width: 100%; height: auto;">
+</div>
+
+            <br>
+            
+            <a href="https://www.linkedin.com/in/lathifs/" class="btn btn-primary btn-outline btn-lg">Linkedin <i class="fab fa-linkedin"></i></a>
+            <br>
+        </div>
+    </div>
+</div>
+
+            <!-- <p><a href="#" class="btn btn-primary btn-sm">Learn More</a></p>-->
+        </div>
+    </div>
+<br>
+        <br>
+        
+
+
 <!--		<div class="fh5co-features-style-1" style="background-image: url(images/full_4.jpg);" data-stellar-background-ratio="0.5">
 			<div class="fh5co-overlay"></div>
 			<div class="container" style="z-index: 3; position: relative;">
@@ -576,8 +589,8 @@
 							</div>
 						</div>
                     </div> -->
-
 <br>
+        <br>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -588,7 +601,7 @@
       height: 2cm;
       width: 100%;
       position: fixed;
-      bottom: 0;
+      bottom: 0; /* Place the footer at the bottom */
       left: 0;
       z-index: 9999; /* Adjust this value if you have other elements with higher z-index */
     }
@@ -604,15 +617,51 @@
 <body>
 
   <!-- Your main content goes here -->
+  <div id="content">
+    <!-- Your content -->
+  </div>
 
-  <div class="gradient-box">
+  <div class="gradient-box" id="footer" style="display: none;">
     <div class="footer-content">
       Copyright &copy; lathifs.tech 2023 | <a href="mailto:lathifsharieff@gmail.com">Contact : lathifsharieff@gmail.com</a>
     </div>
   </div>
 
+  <script>
+    // Wait for the page to load
+    document.addEventListener("DOMContentLoaded", function() {
+      // Function to check if the user has scrolled to the bottom
+      function isScrolledToBottom() {
+        return window.innerHeight + window.scrollY >= document.body.offsetHeight;
+      }
+
+      // Delayed function to show the footer after 0.5s
+      setTimeout(function() {
+        if (isScrolledToBottom()) {
+          document.getElementById("footer").style.display = "block";
+        }
+      }, 500);
+      
+      // Show or hide the footer when scrolling
+      function toggleFooterVisibility() {
+        if (isScrolledToBottom()) {
+          document.getElementById("footer").style.display = "block";
+        } else {
+          document.getElementById("footer").style.display = "none";
+        }
+      }
+      
+      // Initial check
+      toggleFooterVisibility();
+      
+      // Check while scrolling
+      window.addEventListener("scroll", toggleFooterVisibility);
+    });
+  </script>
+
 </body>
 </html>
+
   
                             
 <!--                            <br>Created with <a target="_blank" href="http://freehtml5.co/cards">Cards</a> <br> 
