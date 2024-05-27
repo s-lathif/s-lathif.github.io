@@ -261,7 +261,7 @@ a .lnk-icon-right {
   transition: all 0.3s ease;
 }
 a:hover .lnk-icon-right {
-  padding-left: 5px;
+  padding-left: 8px;
 }
 
 /* Scroll Animations */
