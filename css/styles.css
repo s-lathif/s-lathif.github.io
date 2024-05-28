@@ -26,6 +26,13 @@ body{margin-top:20px;}
     text-align: center;
 }
 
+.owl-prev,
+.owl-next {
+    top: 30%; /* Adjust this value as needed */
+    transform: translateY(-50%);
+}
+
+
 .popular_courses .owl-item.active {
     opacity: 1;
 }
