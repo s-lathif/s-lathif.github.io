@@ -134,15 +134,77 @@
 			</div>
              --->
       <!  ----------------------------->
+        
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('your-background-image.jpg') no-repeat center center fixed; /* Background image */
+            background-size: cover; /* Cover the entire viewport */
+            color: #fff; /* Default text color */
+        }
+
+        .tagline-container {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            font-size: 20px;
+            font-family: 'Press Start 2P', cursive; /* Pixelated font */
+            background-color: #000; /* Semi-transparent dark background */
+            color: #00ff00; /* Green color representing computer hardware */
+            padding: 10px 0;
+            text-align: center;
+            margin: 20px 0; /* Space above and below the tagline container */
+            text-shadow: 0 0 5px #00ff00; /* Glow effect for the LCD look */
+            position: relative; /* Ensure it stays above the background image */
+            z-index: 1; /* Ensures it appears above the background image */
+        }
+
+        .scrolling-text {
+            display: inline-block;
+            animation: scroll-left 18s linear infinite; /* Adjust the speed here */
+        }
+
+        @keyframes scroll-left {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        .fh5co-project-style-2 {
+            margin: 20px;
+            position: relative; /* Ensure it's above the background image */
+            z-index: 1; /* Ensures it appears above the background image */
+        }
+    </style>
+</head>
+<body>
+    <div class="tagline-container">
+        <span class="scrolling-text">From Algorithms to Acceleration, From Code to Chip, From Vision to Reality, From Bare Silicon to Computational Consciousness...</span>
+    </div>
+
+
+        
+        <!---------------Projects ------------------>
 
                <div class="fh5co-project-style-2">
                    <div class="col-md-6 col-md-offset-3 text-center">
                 <div class="container">
                     <h2>Projects</h2>
                     <p class="text-justify"> 
-                <p class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay=".6s" style="text-align: center; font-size: 24px; font-style: italic;">From Algorithms to Acceleration, From Code to Chip, From Vision to Reality..</p>
+               <!-- <p class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay=".6s" style="text-align: center; font-size: 24px; font-style: italic;">From Algorithms to Acceleration, From Code to Chip, From Vision to Reality..</p> -->
 <p class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay=".6s" style="text-align: justify;">
-   My projects are a testament to my keen interest and skill in digital design, spanning across diverse domains. Armed with expertise in HDLs and proficiency in EDA tools, I craft innovative solutions tailored for cutting-edge applications. From processors to accelerators and cryptographic engines, I've delved into a diverse array of projects, each meticulously tested and simulated for robustness and reliability.
+   My projects reflect a profound interest and skill in digital design across various domains. Proficient in HDLs such as Verilog and adept with EDA tools, I engineer innovative solutions for advanced applications. My portfolio includes work on processors, accelerators, and cryptographic engines, each rigorously tested and simulated to ensure robustness and reliability. My approach integrates application engineering principles, demonstrating a commitment to excellence in every project.
 </p>
 
 
@@ -566,7 +628,7 @@
                         <h4>University of Tübingen | Stuttgart, Germany</h4>
                         <span>Oct 2023 - Apr 2024</span>
                         <ul>
-                            <li>Designed and implemented a high-performance DSP engine integrated with MFCC extraction, custom FFT core, FIR and Hamming filters tailored for efficient audio processing in ML applications and engineered a robust AHB protocol ensuring seamless integration into the UltraTrail accelerator, delivering exceptional accuracy and speed..</li>
+                            <li>Designed and implemented a high-performance DSP engine integrated with MFCC extraction, custom FFT core, FIR and Hamming filters tailored for efficient audio processing in ML applications and engineered a robust AHB protocol ensuring seamless integration into the UltraTrail accelerator, delivering exceptional accuracy and speed.</li>
                            
                         </ul>
                     </div>
@@ -575,9 +637,10 @@
                         <h3>AI Hardware Engineer </h3>
 
                         <h4>Gemesys | Germany</h4>
-                        <span>Oct 2023 - Apr 2024</span>
+                        <span>Jun 2023 - Sep 2023</span>
                         <ul>
-                            <li>Designed and implemented a high-performance DSP engine integrated with MFCC extraction, custom FFT core, FIR and Hamming filters tailored for efficient audio processing in ML applications and engineered a robust AHB protocol ensuring seamless integration into the UltraTrail accelerator, delivering exceptional accuracy and speed..</li>
+                            <li>Led requirement-driven development and cross-functional collaboration in agile environments to align project goals with performance criteria across diverse teams.
+                            <li>conceptualized an initial prototype for a neuromorphic algorithm on Xilinx FPGA tool flow, acted as the face of the product, and led presentations to gather stakeholder feedback.</li>
                            
                         </ul>
                     </div>
@@ -586,9 +649,11 @@
                         <h3>Deep Learning Hardware Engineer </h3>
 
                         <h4>Bosch Centre for AI | Stuttgart, Germany</h4>
-                        <span>Oct 2023 - Apr 2024</span>
+                        <span>Oct 2022 - Mar 2023</span>
                         <ul>
-                            <li>Designed and implemented a high-performance DSP engine integrated with MFCC extraction, custom FFT core, FIR and Hamming filters tailored for efficient audio processing in ML applications and engineered a robust AHB protocol ensuring seamless integration into the UltraTrail accelerator, delivering exceptional accuracy and speed..</li>
+                            <li>Designed and implemented the RTL for the Neural Computing Engine (NCE) and AXI (ARM-AMBA) Interface as key components of the CESARIA SoC, significantly enhancing performance. 
+                                <li>Conducted RTL simulation of the AI IP using advanced EDA tools like ModelSim, incorporating TCL scripting within Linux and Git environments. 
+                                    <li>Contributed to the micro-architecture and hardware/software co-design of the ML accelerator, supported by extensive research on AI hardware and Domain-Specific Accelerators.</li>
                            
                         </ul>
                     </div>
@@ -597,9 +662,12 @@
                         <h3>Research Assistant</h3>
 
                         <h4>IMTEK | Freiburg, Germany</h4>
-                        <span>Oct 2023 - Apr 2024</span>
+                        <span>Sep 2021 - Sep 2022</span>
                         <ul>
-                            <li>Designed and implemented a high-performance DSP engine integrated with MFCC extraction, custom FFT core, FIR and Hamming filters tailored for efficient audio processing in ML applications and engineered a robust AHB protocol ensuring seamless integration into the UltraTrail accelerator, delivering exceptional accuracy and speed..</li>
+                            <li> Engineered an electrochemical sensor system on an Arduino Uno board. Conducted cyclic voltammetry tests using LPC1343 board and developed 3D printing methods for tactile displays, co-authoring a research paper in collaboration with KIT. 
+(<a href="https://pubs.acs.org/doi/full/10.1021/acsami.2c17906">Research Paper</a>)
+</li>
+
                            
                         </ul>
                     </div>
@@ -609,10 +677,10 @@
                     <div class="experience-item">
                         <h3>Embedded Systems Engineer</h3>
                         <h4>Texas Instrument | Bengaluru, India</h4>
-                        <span>2017 - 2021</span>
+                        <span>Jun 2019 - Aug 2019</span>
                         <ul>
-                            <li>Created comprehensive test plans and verification environments for complex SoC designs.</li>
-                            <li>Specialized in UVM and SystemVerilog-based verification methodologies.</li>
+                            <li>Acquired extensive training in Advanced Embedded Systems and IoT Applications, with a focus on MSP430, ARM Cortex M4 architecture, and industrial applications.
+                                <li>Developed and implemented an image recognition project on the BOOSTXL board.</li>
                         </ul>
                     </div>
                 </div>
@@ -989,7 +1057,7 @@
     </ul>
   </div>
    <div class="footer-copyright text-center py-3">
-    <h7 style="color: #000;">&copy; 2023 Lathif Sharieff | </h7>
+    <h7 style="color: #000;">&copy; 2024 Lathif Sharieff | </h7>
     <h7 style="color: #000;" href="https://discord.gg/uRqH5UT"> All Rights Reserved</h7>
   </div>
 </footer>
