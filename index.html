@@ -170,8 +170,8 @@
 
         .scrolling-text {
             display: inline-block;
-            /* Use a default duration for larger screens */
-            animation: scroll-left 20s linear infinite;
+            /* Adjust animation duration for different screen sizes */
+            animation: scroll-left 30s linear infinite;
         }
 
         @keyframes scroll-left {
@@ -187,14 +187,14 @@
         @media (max-width: 768px) {
             .scrolling-text {
                 /* Adjust animation duration for smaller screens */
-                animation: scroll-left 20s linear infinite;
+                animation: scroll-left 25s linear infinite;
             }
         }
 
         @media (max-width: 480px) {
             .scrolling-text {
                 /* Further adjust animation duration for very small screens */
-                animation: scroll-left 15s linear infinite;
+                animation: scroll-left 20s linear infinite;
             }
         }
 
@@ -209,8 +209,6 @@
     <div class="tagline-container">
         <span class="scrolling-text">From Algorithms to Acceleration, From Code to Chip, From Vision to Reality, From Bare Silicon to Computational Consciousness...</span>
     </div>
-
-
 
         
         <!---------------Projects ------------------>
